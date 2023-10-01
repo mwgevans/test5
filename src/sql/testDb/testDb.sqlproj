@@ -6,8 +6,10 @@
     <ProjectGuid>{53826573-C14D-4154-9772-6645910D8944}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
-    <OutputPath>..\..\..\bin\$(MSBuildProjectName)\$(Configuration)</OutputPath>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="testDb_1.publish.xml.publish.xml" />
+  </ItemGroup>
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>

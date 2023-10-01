@@ -11,7 +11,8 @@ CREATE TRIGGER trg_Order_Updated
 ON [dbo].[Orders]
  AFTER UPDATE
 AS
-
+if TRIGGER_NESTLEVEL()>1
+  RETURN;
 UPDATE [dbo].[Orders] set [Updated] = GETDATE()
 FROM [dbo].[Orders]
 JOIN inserted i
