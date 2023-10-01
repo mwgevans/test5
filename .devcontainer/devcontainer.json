@@ -32,7 +32,10 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-dotnettools.csharp",
-				"ms-mssql.mssql"
+				"ms-mssql.mssql",
+				"ms-dotnettools.csdevkit",
+				"PKief.material-icon-theme",
+				"patcx.vscode-nuget-gallery"
 			]
 		}
 	},
